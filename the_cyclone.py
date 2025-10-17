@@ -1,22 +1,22 @@
 # Write code below 💖
+height = 0
+credits = 0
 
-height = int(input('What is your height (cm)? '))
+while height <= 0:
+  height = int(input("Enter your height in cm: "))
+  if height <= 0:
+    print("Invalid input! Height must be greater than zero.\n")
+    continue
 
-if height <= 0:
-  print("Invalid input!")
-  exit()
-elif height < 137:
-  print("You are not tall enough to ride.")
-  exit()
-
-credits = int(input('How many credits do you have? '))
-
-if credits < 0:
-  print("Invalid input!")
-  exit()
-  exit()
-elif credits < 10:
-  print("You don't have enough credits.")
-  exit()
+if height >= 137:
+  while credits <= 0:
+    credits = int(input("Enter number of credits you have: "))
+    if credits <= 0:
+      print("Invalid input! Credits must be greater than zero.\n")
+      continue
+  if credits >= 10:
+      print("You can ride the cyclone!")
+  else:
+      print("You need at least 10 credits to ride the cyclone.")
 else:
-  print("Enjoy the ride!")
+  print("You need to be at least 137 cm tall to ride the cyclone.")
