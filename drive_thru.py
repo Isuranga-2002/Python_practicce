@@ -21,7 +21,7 @@ def welcome():
         item = int(input("\nEnter a number: "))
         print("\nYou selected: ", drive_thru_item(item))
     except ValueError:
-        print("⚠️ Please enter a valid number!")
+        print("⚠️ Please enter a valid number!\n")
 
 welcome()
 
